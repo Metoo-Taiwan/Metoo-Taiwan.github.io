@@ -74,8 +74,7 @@
 
 <script>
   function refreshList() {
-    var iframe = document.getElementById('listFrame');
-    iframe.src = iframe.src;
+    document.getElementById('listFrame').contentWindow.location.reload();
   }
 </script>
 
