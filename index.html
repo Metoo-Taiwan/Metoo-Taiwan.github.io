@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MetooTaiwan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large">
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:16px 16px" id="home">
+    <p>台灣 #Metoo 事件名單</p>
+    <h1 class="w3-jumbo w3-center"><b>#MeToo Taiwan</b></h1>
+  </header>
+  
+  <!-- Statistic Section -->
+  <div class="w3-content w3-padding-5" id="Statistic">
+    <div class="w3-row w3-center w3-white w3-padding-5">
+      <div class="w3-center w3-section">
+        <span class="w3-xlarge">Apr.8.2024</span><br>
+        Latest Update
+      </div>
+      <div class="w3-center w3-section">
+        <span class="w3-xlarge">288+</span><br>
+        Cases Exposed
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-padding-16" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>本表單由 Aanonymousneverforever21整理、放置於github中。
+    </p>
+  </div>
+
+  <!-- Submit Section -->
+  <div class="w3-content w3-padding-32" id="contact">
+    <h3>File Your Case</h3>
+    <hr class="w3-opacity">
+    <div class="w3-section">
+      <p>metoo.tw@proton.me</p>
+      <a href="submitForm.html" target="_blank" class="w3-button w3-black">#MeToo 事件回報</a>
+    </div>
+  </div>
+
+  <!-- List -->
+  <div class="w3-content w3-padding-16" id="list">
+    <h2 class="w3-padding-16">List</h2>
+    <hr class="w3-opacity">
+    <div class="w3-responsive">
+      <button class="w3-button w3-black" onclick="refreshList()">Refresh</button>
+      <iframe id="listFrame" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDjmbFx1PZV2rMa6yEhcrAbmBKknMTd-vXQxKlwQijgD7kL0isdaGreIyBVAqSQ8J5P5dsEmXvcFAq/pubhtml?gid=777412381&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600" style="border:none;"></iframe>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function refreshList() {
+    var iframe = document.getElementById('listFrame');
+    iframe.src = iframe.src;
+  }
+</script>
+
+</body>
+</html>
